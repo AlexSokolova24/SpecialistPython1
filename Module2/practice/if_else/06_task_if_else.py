@@ -7,4 +7,7 @@
 
 year = int(input("Год: "))
 
-# TODO: your code here
+if year%4==0 and year%400==0:
+    print("Год високосный")
+else:
+    print("Год не является високосным")
