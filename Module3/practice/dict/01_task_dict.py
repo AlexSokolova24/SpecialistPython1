@@ -4,7 +4,16 @@
 # Считая,что курс доллара равен dollar_rate
 # Вычислите цену всех товаров с названием "name" в долларах
 
-item = {"name": "Кроссовки", "price": "7540.5", "currency": "rub", "count": "10"}
-dollar_rate = 74.12
+item = {
+    "name": "Кроссовки",
+    "price": 6500,
+    "currency": "rub",
+    "count": 10,
+}
 
-# TODO: your code here
+price = item["price"]
+count = item["count"]
+dollar_rate = 74.12
+summ_all_item = price * count
+summ_in_dollar = summ_all_item/dollar_rate
+print(summ_in_dollar)
